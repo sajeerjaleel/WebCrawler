@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Epl</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header id="header" class="header"  data-offset-top="10" >
+    <nav class="navbar navbar-default" role="navigation" style="background-color:#0B243B">
+      <div class="container">                      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+         	</button>
+         	<img src="barclays.png" style="height:40px; width:60px; float:left;">&nbsp&nbsp
+          <a class="navbar-brand" href="/home"><b><span style="color:#0B0B3B;">BARCLAYS PREMIER LEAGUE</span></a></b>
+        </div>
+                        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right;">
+            <ul class="nav navbar-nav">
+              <li class="dropdown ">
+                <a href="/home" style="color:#0B0B3B;">Home</a>
+              </li>
+
+              <li class="dropdown">
+                <a href="/table" style="color:#0B0B3B;">Table</a>
+              </li>
+
+              <li class="dropdown">
+               	<a href="/fixtures" style="color:#0B0B3B;">Fixtures</a>
+              </li>
+
+              <li class="dropdown">
+                <a href="/results" style="color:#0B0B3B;">Results</a>
+              </li>
+
+            </ul>
+          	<!-- /.nav -->
+          </div>
+        	<!-- /.navbar-collapse -->
+        </div>
+     		<!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+    </header>
+
+
+
+
+<%= yield %>
+
+</body>
+</html>
